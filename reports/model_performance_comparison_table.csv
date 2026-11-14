@@ -1,0 +1,9 @@
+Model,Train Accuracy,5-Fold CV Accuracy,Test Accuracy,Train-Test Gap,Test Precision,Test Recall,Test F1-Score,Test ROC-AUC,Fit Diagnosis
+Support Vector Machine (RBF),0.989,0.9692,0.9825,0.0066,0.9861,0.9861,0.9861,0.9957,Well-Generalized (Balanced)
+K-Nearest Neighbors (k=7),0.967,0.9538,0.9649,0.0021,0.9474,1.0,0.973,0.9798,Well-Generalized (Balanced)
+Logistic Regression (Tuned L2),0.9868,0.978,0.9649,0.0219,0.9722,0.9722,0.9722,0.994,Well-Generalized (Balanced)
+Random Forest (n=150),1.0,0.9648,0.9561,0.0439,0.9589,0.9722,0.9655,0.9949,Overfitting (High Variance)
+Gradient Boosting,1.0,0.9582,0.9561,0.0439,0.9589,0.9722,0.9655,0.994,Overfitting (High Variance)
+"Decision Tree (Depth=1, Underfit)",0.9231,0.9033,0.9211,0.002,0.92,0.9583,0.9388,0.9077,Underfitting (High Bias)
+"Decision Tree (Unconstrained, Overfit)",1.0,0.9231,0.9123,0.0877,0.9697,0.8889,0.9275,0.9206,Overfitting (High Variance)
+Dummy Baseline (Underfit),0.6264,0.6264,0.6316,-0.0052,0.6316,1.0,0.7742,0.5,Underfitting (High Bias)
